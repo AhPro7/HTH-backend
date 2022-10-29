@@ -1,0 +1,14 @@
+create table HTHv2.`Users&Drugs`
+(
+    user_id int not null,
+    drug_id int not null,
+    amount  int not null,
+    constraint `Users&Drugs_pk`
+        primary key (drug_id, user_id),
+    constraint `Users&Drugs_Drugs_null_fk`
+        foreign key (drug_id) references Drugs (drugs_id),
+    constraint `Users&Drugs_Users_null_fk`
+        foreign key (user_id) references Users (user_id)
+);
+
+

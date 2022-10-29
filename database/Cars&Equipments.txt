@@ -1,0 +1,13 @@
+create table HTHv2.`Cars&Equipments`
+(
+    car_id        int not null,
+    equipments_id int not null,
+    constraint `Cars&Equipments_pk`
+        primary key (equipments_id, car_id),
+    constraint `Cars&Equipments_Cars_null_fk`
+        foreign key (car_id) references Cars (car_id),
+    constraint `Cars&Equipments_Equipments_null_fk`
+        foreign key (equipments_id) references Equipments (eq_id)
+);
+
+

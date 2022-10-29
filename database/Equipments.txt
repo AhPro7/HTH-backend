@@ -1,0 +1,10 @@
+create table HTHv2.Equipments
+(
+    eq_id   int auto_increment,
+    eq_name char(50) not null,
+    eq_type char(50) not null,
+    constraint Equipments_pk
+        primary key (eq_id)
+);
+
+

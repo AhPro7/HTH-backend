@@ -1,0 +1,11 @@
+create table HTHv2.Users
+(
+    user_id       int auto_increment,
+    user_name     char(50)  not null,
+    is_admin      bool      not null,
+    user_location char(100) not null,
+    constraint Users_pk
+        primary key (user_id)
+);
+
+

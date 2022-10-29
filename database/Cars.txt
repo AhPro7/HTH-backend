@@ -1,0 +1,10 @@
+create table HTHv2.Cars
+(
+    car_id   int auto_increment,
+    car_type char(50) not null,
+    car_name int      not null,
+    constraint Cars_pk
+        primary key (car_id)
+);
+
+

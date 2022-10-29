@@ -1,0 +1,13 @@
+create table HTHv2.`Users&Equipments`
+(
+    user_id       int not null,
+    equipments_id int not null,
+    amount        int not null,
+    primary key (user_id, equipments_id),
+    constraint `Users&Equipments_Equipments_null_fk`
+        foreign key (equipments_id) references Equipments (eq_id),
+    constraint `Users&Equipments_Users_null_fk`
+        foreign key (user_id) references Users (user_id)
+);
+
+

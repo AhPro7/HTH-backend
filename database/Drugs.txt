@@ -1,0 +1,10 @@
+create table HTHv2.Drugs
+(
+    drugs_id  int auto_increment,
+    drug_name char(50) not null,
+    drug_type char(50) not null,
+    constraint Drugs_pk
+        primary key (drugs_id)
+);
+
+
